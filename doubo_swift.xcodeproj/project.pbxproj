@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */; };
+		EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D141F0B3F580086C323 /* AppDelegate.swift */; };
+		EF281D171F0B3F580086C323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D161F0B3F580086C323 /* ViewController.swift */; };
+		EF281D1A1F0B3F580086C323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF281D181F0B3F580086C323 /* Main.storyboard */; };
+		EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1B1F0B3F580086C323 /* Assets.xcassets */; };
+		EF281D1F1F0B3F580086C323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */; };
+		EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */; };
+		EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BD01F29772700E8F8FA /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		821BB4088AF3505504295371 /* Pods-doubo_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubo_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift.release.xcconfig"; sourceTree = "<group>"; };
+		86051F8981E0D99F391B489B /* Pods-doubo_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubo_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doubo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF281D111F0B3F580086C323 /* doubo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF281D141F0B3F580086C323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF281D161F0B3F580086C323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF281D191F0B3F580086C323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF281D1B1F0B3F580086C323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF281D1E1F0B3F580086C323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF281D201F0B3F580086C323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EFD70BD01F29772700E8F8FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF281D0E1F0B3F580086C323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE3096481B9C47415255F8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86051F8981E0D99F391B489B /* Pods-doubo_swift.debug.xcconfig */,
+				821BB4088AF3505504295371 /* Pods-doubo_swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D277DA233682EF78E39BCDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF281D081F0B3F580086C323 = {
+			isa = PBXGroup;
+			children = (
+				EF281D131F0B3F580086C323 /* doubo_swift */,
+				EF281D121F0B3F580086C323 /* Products */,
+				3DE3096481B9C47415255F8D /* Pods */,
+				8D277DA233682EF78E39BCDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF281D121F0B3F580086C323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF281D111F0B3F580086C323 /* doubo_swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF281D131F0B3F580086C323 /* doubo_swift */ = {
+			isa = PBXGroup;
+			children = (
+				EF281D141F0B3F580086C323 /* AppDelegate.swift */,
+				EF281D161F0B3F580086C323 /* ViewController.swift */,
+				EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */,
+				EFD70BD01F29772700E8F8FA /* LoginViewController.swift */,
+				EF281D181F0B3F580086C323 /* Main.storyboard */,
+				EF281D1B1F0B3F580086C323 /* Assets.xcassets */,
+				EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */,
+				EF281D201F0B3F580086C323 /* Info.plist */,
+			);
+			path = doubo_swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF281D101F0B3F580086C323 /* doubo_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF281D231F0B3F580086C323 /* Build configuration list for PBXNativeTarget "doubo_swift" */;
+			buildPhases = (
+				5AC452D2A07BD9BC7F8A42D3 /* [CP] Check Pods Manifest.lock */,
+				EF281D0D1F0B3F580086C323 /* Sources */,
+				EF281D0E1F0B3F580086C323 /* Frameworks */,
+				EF281D0F1F0B3F580086C323 /* Resources */,
+				386579D11C8F2D60EC2B10F4 /* [CP] Embed Pods Frameworks */,
+				580523C6989ACE941BBD3500 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doubo_swift;
+			productName = doubo_swift;
+			productReference = EF281D111F0B3F580086C323 /* doubo_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF281D091F0B3F580086C323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = jimo;
+				TargetAttributes = {
+					EF281D101F0B3F580086C323 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4JFR4NTMKQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF281D0C1F0B3F580086C323 /* Build configuration list for PBXProject "doubo_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF281D081F0B3F580086C323;
+			productRefGroup = EF281D121F0B3F580086C323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF281D101F0B3F580086C323 /* doubo_swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF281D0F1F0B3F580086C323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF281D1F1F0B3F580086C323 /* LaunchScreen.storyboard in Resources */,
+				EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */,
+				EF281D1A1F0B3F580086C323 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		386579D11C8F2D60EC2B10F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580523C6989ACE941BBD3500 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC452D2A07BD9BC7F8A42D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF281D0D1F0B3F580086C323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */,
+				EF281D171F0B3F580086C323 /* ViewController.swift in Sources */,
+				EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */,
+				EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF281D181F0B3F580086C323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF281D191F0B3F580086C323 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF281D1E1F0B3F580086C323 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF281D211F0B3F580086C323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF281D221F0B3F580086C323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF281D241F0B3F580086C323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86051F8981E0D99F391B489B /* Pods-doubo_swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
+				INFOPLIST_FILE = doubo_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF281D251F0B3F580086C323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821BB4088AF3505504295371 /* Pods-doubo_swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
+				INFOPLIST_FILE = doubo_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF281D0C1F0B3F580086C323 /* Build configuration list for PBXProject "doubo_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF281D211F0B3F580086C323 /* Debug */,
+				EF281D221F0B3F580086C323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF281D231F0B3F580086C323 /* Build configuration list for PBXNativeTarget "doubo_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF281D241F0B3F580086C323 /* Debug */,
+				EF281D251F0B3F580086C323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF281D091F0B3F580086C323 /* Project object */;
+}
