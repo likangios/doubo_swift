@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
+import SDWebImage
 class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let imageView = UIImageView()
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +21,7 @@ class LoginViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
