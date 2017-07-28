@@ -8,14 +8,45 @@
 
 import UIKit
 import SDWebImage
+
+enum LoginType:Int{
+    case QQLogin = 1
+    
+    case WXLogin
+    
+    case WBLogin
+    
+    case MBLogin
+}
+
 class LoginViewController: BaseViewController {
 
+    lazy var bgimageView:UIImageView = {
+        let iv = UIImageView()
+        return iv
+    }()
+    lazy var loginTypeImages:[String] = {
+        var array = [String]()
+        array.append("login_qq_normal")
+        array.append("login_wechat_normal")
+        array.append("login_sina_normal")
+        array.append("login_iphone_normal")
+        return array
+    }()
+    lazy var titleLabel:UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor(hexString: "ffffff")
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.text = "登录逗播"
+        return label
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageView = UIImageView()
-        // Do any additional setup after loading the view.
-    }
+        view.backgroundColor = UIColor.blue.withAlphaComponent(0.4)
+        creatSubView()
 
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,4 +63,68 @@ class LoginViewController: BaseViewController {
     }
     */
 
+}
+extension LoginViewController {
+    func creatSubView() {
+        view.addSubview(self.titleLabel)
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(-170)
+        }
+        let width:CGFloat = 68.0
+        let height:CGFloat = 68.0
+        let space:CGFloat = 5.0
+        let sideSize:CGFloat = (kScreenW - width * 4 - space * 3) / 2.0
+        
+        var lastButton:UIButton?;
+        
+        for index in 1...loginTypeImages.count {
+            let imgName = loginTypeImages[index-1]
+            let button:UIButton = UIButton.init(type: .custom)
+            button.tag = index
+            button.setImage(UIImage.init(named: imgName), for: .normal)
+            button.addTarget(self, action: #selector(loginButtonClick(button:)), for: .touchUpInside)
+            view.addSubview(button)
+            button.snp.makeConstraints({ (make) in
+                make.width.equalTo(width)
+                make.height.equalTo(height)
+                if lastButton != nil {
+                    make.left.equalTo(lastButton!.snp.right).offset(space);
+                    make.top.equalTo(lastButton!.snp.top)
+                }
+                else{
+                    make.left.equalTo(sideSize);
+                    make.top.equalTo(self.titleLabel.snp.bottom).offset(25)
+                }
+            })
+            lastButton = button
+        }
+        
+        
+        
+        
+    }
+    func loginButtonClick(button:UIButton) {
+        
+        switch button.tag {
+        case LoginType.QQLogin.rawValue:
+            let test1:Test1ViewController = Test1ViewController()
+            present(test1, animated: true, completion: { 
+                
+            })
+            break
+        case LoginType.WXLogin.rawValue:
+            
+            break
+        case LoginType.WBLogin.rawValue:
+            
+            break
+        case LoginType.MBLogin.rawValue:
+            
+            break
+        default:
+            break
+        }
+        
+    }
 }

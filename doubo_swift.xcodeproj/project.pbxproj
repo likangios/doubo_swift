@@ -15,6 +15,10 @@
 		EF281D1F1F0B3F580086C323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */; };
 		EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */; };
 		EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BD01F29772700E8F8FA /* LoginViewController.swift */; };
+		EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */; };
+		EFD70BDE1F298D0C00E8F8FA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BDD1F298D0C00E8F8FA /* Common.swift */; };
+		EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */; };
+		EFE089F51F2AE64C00D81B6E /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,11 @@
 		EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFD70BD01F29772700E8F8FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFD70BD21F297EE600E8F8FA /* doubo_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "doubo_swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFD70BDA1F2988B500E8F8FA /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		EFD70BDD1F298D0C00E8F8FA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
+		EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +92,14 @@
 		EF281D131F0B3F580086C323 /* doubo_swift */ = {
 			isa = PBXGroup;
 			children = (
+				EFD70BD91F2988B500E8F8FA /* Category */,
 				EF281D141F0B3F580086C323 /* AppDelegate.swift */,
 				EF281D161F0B3F580086C323 /* ViewController.swift */,
 				EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */,
 				EFD70BD01F29772700E8F8FA /* LoginViewController.swift */,
+				EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */,
+				EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */,
+				EFD70BDD1F298D0C00E8F8FA /* Common.swift */,
 				EF281D181F0B3F580086C323 /* Main.storyboard */,
 				EF281D1B1F0B3F580086C323 /* Assets.xcassets */,
 				EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */,
@@ -94,6 +107,15 @@
 				EFD70BD21F297EE600E8F8FA /* doubo_swift-Bridging-Header.h */,
 			);
 			path = doubo_swift;
+			sourceTree = "<group>";
+		};
+		EFD70BD91F2988B500E8F8FA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EFD70BDA1F2988B500E8F8FA /* UIColor+expanded.h */,
+				EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */,
+				EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */,
 				EF281D171F0B3F580086C323 /* ViewController.swift in Sources */,
 				EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */,
+				EFD70BDE1F298D0C00E8F8FA /* Common.swift in Sources */,
+				EFE089F51F2AE64C00D81B6E /* Test2ViewController.swift in Sources */,
 				EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */,
+				EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
