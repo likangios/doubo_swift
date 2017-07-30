@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class Test1ViewController: BaseViewController {
 
@@ -23,10 +24,11 @@ class Test1ViewController: BaseViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let test2 = Test2ViewController()
-        present(test2, animated: true, completion: {
-            
-        })
+//        let test2 = Test2ViewController()
+//        present(test2, animated: true, completion: {
+//            
+//        })
+       SKStoreReviewController.requestReview()
     }
     /*
     // MARK: - Navigation

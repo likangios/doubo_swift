@@ -10,9 +10,7 @@
 		31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */; };
 		EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D141F0B3F580086C323 /* AppDelegate.swift */; };
 		EF281D171F0B3F580086C323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D161F0B3F580086C323 /* ViewController.swift */; };
-		EF281D1A1F0B3F580086C323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF281D181F0B3F580086C323 /* Main.storyboard */; };
 		EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1B1F0B3F580086C323 /* Assets.xcassets */; };
-		EF281D1F1F0B3F580086C323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */; };
 		EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */; };
 		EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BD01F29772700E8F8FA /* LoginViewController.swift */; };
 		EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */; };
@@ -28,9 +26,7 @@
 		EF281D111F0B3F580086C323 /* doubo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF281D141F0B3F580086C323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF281D161F0B3F580086C323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF281D191F0B3F580086C323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF281D1B1F0B3F580086C323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF281D1E1F0B3F580086C323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF281D201F0B3F580086C323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFD70BD01F29772700E8F8FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +96,7 @@
 				EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */,
 				EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */,
 				EFD70BDD1F298D0C00E8F8FA /* Common.swift */,
-				EF281D181F0B3F580086C323 /* Main.storyboard */,
 				EF281D1B1F0B3F580086C323 /* Assets.xcassets */,
-				EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */,
 				EF281D201F0B3F580086C323 /* Info.plist */,
 				EFD70BD21F297EE600E8F8FA /* doubo_swift-Bridging-Header.h */,
 			);
@@ -182,9 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF281D1F1F0B3F580086C323 /* LaunchScreen.storyboard in Resources */,
 				EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */,
-				EF281D1A1F0B3F580086C323 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -255,25 +247,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EF281D181F0B3F580086C323 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF281D191F0B3F580086C323 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EF281D1D1F0B3F580086C323 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF281D1E1F0B3F580086C323 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EF281D211F0B3F580086C323 /* Debug */ = {
@@ -377,7 +350,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
 				INFOPLIST_FILE = doubo_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,7 +368,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
 				INFOPLIST_FILE = doubo_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
