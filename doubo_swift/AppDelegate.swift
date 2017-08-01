@@ -14,12 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     public  func setRootViewController(vc:UIViewController){
         
-        self.window?.rootViewController = vc;
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
     
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        setRootViewController(vc: LoginViewController())
+        let loginVc = LoginViewController()
+        let nav = BaseNavigationViewController.init(rootViewController: loginVc)
+        nav.navigationBar.isHidden = true
+        setRootViewController(vc: nav)
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 

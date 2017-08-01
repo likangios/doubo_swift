@@ -20,7 +20,7 @@ enum LoginType:Int{
 }
 
 class LoginViewController: BaseViewController {
-
+    
     lazy var bgimageView:UIImageView = {
         let iv = UIImageView()
         return iv
@@ -43,26 +43,14 @@ class LoginViewController: BaseViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blue.withAlphaComponent(0.4)
+        view.backgroundColor = UIColor.white
         creatSubView()
-
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension LoginViewController {
     func creatSubView() {
@@ -99,19 +87,17 @@ extension LoginViewController {
             })
             lastButton = button
         }
-        
-        
-        
-        
-    }
+}
     func loginButtonClick(button:UIButton) {
         
         switch button.tag {
         case LoginType.QQLogin.rawValue:
-            let test1:Test1ViewController = Test1ViewController()
-            present(test1, animated: true, completion: { 
-                
-            })
+            let test = Test1ViewController()
+            navigationController?.pushViewController(test, animated: true)
+//            let appdelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//            let nav = BaseNavigationViewController.init(rootViewController: HomeTabBarViewController())
+//            nav.setNavigationBarHidden(true, animated: true)
+//            appdelegate.setRootViewController(vc: nav)
             break
         case LoginType.WXLogin.rawValue:
             

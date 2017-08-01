@@ -28,7 +28,11 @@ class Test1ViewController: BaseViewController {
 //        present(test2, animated: true, completion: {
 //            
 //        })
-       SKStoreReviewController.requestReview()
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else {
+            // Fallback on earlier versions
+        }
     }
     /*
     // MARK: - Navigation

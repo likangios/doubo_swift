@@ -10,7 +10,17 @@
 		31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */; };
 		EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D141F0B3F580086C323 /* AppDelegate.swift */; };
 		EF281D171F0B3F580086C323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D161F0B3F580086C323 /* ViewController.swift */; };
-		EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF281D1B1F0B3F580086C323 /* Assets.xcassets */; };
+		EF41063D1F30742C00271680 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41063C1F30742C00271680 /* BaseTabBarViewController.swift */; };
+		EF41063F1F30743D00271680 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41063E1F30743D00271680 /* BaseTableViewCell.swift */; };
+		EF4106411F30745400271680 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4106401F30745400271680 /* BaseNavigationViewController.swift */; };
+		EF4106431F30747F00271680 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4106421F30747F00271680 /* HomeTabBarViewController.swift */; };
+		EF4106451F3074A500271680 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4106441F3074A500271680 /* HomeViewController.swift */; };
+		EF4106471F3074AF00271680 /* UserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4106461F3074AF00271680 /* UserCenterViewController.swift */; };
+		EF41064B1F3077DF00271680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF41064A1F3077DF00271680 /* Assets.xcassets */; };
+		EF41064E1F307D7500271680 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF41064D1F307D7500271680 /* UMMobClick.framework */; };
+		EF4106521F307D8B00271680 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4106501F307D8B00271680 /* libUMessage_Sdk_1.5.0a.a */; };
+		EF4106551F30896900271680 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4106541F30896900271680 /* UIImage+Common.m */; };
+		EF4106571F30930600271680 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4106561F30930600271680 /* AssetsLibrary.framework */; };
 		EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */; };
 		EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BD01F29772700E8F8FA /* LoginViewController.swift */; };
 		EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */; };
@@ -26,9 +36,21 @@
 		EF281D111F0B3F580086C323 /* doubo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF281D141F0B3F580086C323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF281D161F0B3F580086C323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF281D1B1F0B3F580086C323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF281D201F0B3F580086C323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EF41063C1F30742C00271680 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		EF41063E1F30743D00271680 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = doubo_swift/Classes/ViewController/BaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		EF4106401F30745400271680 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		EF4106421F30747F00271680 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		EF4106441F3074A500271680 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EF4106461F3074AF00271680 /* UserCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCenterViewController.swift; sourceTree = "<group>"; };
+		EF41064A1F3077DF00271680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF41064D1F307D7500271680 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		EF4106501F307D8B00271680 /* libUMessage_Sdk_1.5.0a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.5.0a.a; sourceTree = "<group>"; };
+		EF4106511F307D8B00271680 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		EF4106531F30896900271680 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		EF4106541F30896900271680 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		EF4106561F30930600271680 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../BaseViewController.swift; sourceTree = "<group>"; };
 		EFD70BD01F29772700E8F8FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFD70BD21F297EE600E8F8FA /* doubo_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "doubo_swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		EFD70BDA1F2988B500E8F8FA /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
@@ -43,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4106571F30930600271680 /* AssetsLibrary.framework in Frameworks */,
+				EF4106521F307D8B00271680 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
+				EF41064E1F307D7500271680 /* UMMobClick.framework in Frameworks */,
 				31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +87,8 @@
 		8D277DA233682EF78E39BCDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF4106561F30930600271680 /* AssetsLibrary.framework */,
+				EF41064D1F307D7500271680 /* UMMobClick.framework */,
 				E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */,
 			);
 			name = Frameworks;
@@ -88,19 +115,75 @@
 		EF281D131F0B3F580086C323 /* doubo_swift */ = {
 			isa = PBXGroup;
 			children = (
+				EF41064C1F307D5600271680 /* Extends */,
+				EF4106381F3073FF00271680 /* Classes */,
 				EFD70BD91F2988B500E8F8FA /* Category */,
 				EF281D141F0B3F580086C323 /* AppDelegate.swift */,
 				EF281D161F0B3F580086C323 /* ViewController.swift */,
-				EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */,
 				EFD70BD01F29772700E8F8FA /* LoginViewController.swift */,
 				EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */,
 				EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */,
 				EFD70BDD1F298D0C00E8F8FA /* Common.swift */,
-				EF281D1B1F0B3F580086C323 /* Assets.xcassets */,
+				EF41064A1F3077DF00271680 /* Assets.xcassets */,
 				EF281D201F0B3F580086C323 /* Info.plist */,
 				EFD70BD21F297EE600E8F8FA /* doubo_swift-Bridging-Header.h */,
 			);
 			path = doubo_swift;
+			sourceTree = "<group>";
+		};
+		EF4106381F3073FF00271680 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF4106391F3073FF00271680 /* Model */,
+				EF41063A1F3073FF00271680 /* View */,
+				EF41063B1F3073FF00271680 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF4106391F3073FF00271680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF41063A1F3073FF00271680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF41063E1F30743D00271680 /* BaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF41063B1F3073FF00271680 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EFD70BCE1F29771500E8F8FA /* BaseViewController.swift */,
+				EF41063C1F30742C00271680 /* BaseTabBarViewController.swift */,
+				EF4106401F30745400271680 /* BaseNavigationViewController.swift */,
+				EF4106421F30747F00271680 /* HomeTabBarViewController.swift */,
+				EF4106441F3074A500271680 /* HomeViewController.swift */,
+				EF4106461F3074AF00271680 /* UserCenterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF41064C1F307D5600271680 /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				EF41064F1F307D8B00271680 /* UMessage_Sdk_1.5.0a */,
+			);
+			path = Extends;
+			sourceTree = "<group>";
+		};
+		EF41064F1F307D8B00271680 /* UMessage_Sdk_1.5.0a */ = {
+			isa = PBXGroup;
+			children = (
+				EF4106501F307D8B00271680 /* libUMessage_Sdk_1.5.0a.a */,
+				EF4106511F307D8B00271680 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.5.0a;
 			sourceTree = "<group>";
 		};
 		EFD70BD91F2988B500E8F8FA /* Category */ = {
@@ -108,6 +191,8 @@
 			children = (
 				EFD70BDA1F2988B500E8F8FA /* UIColor+expanded.h */,
 				EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */,
+				EF4106531F30896900271680 /* UIImage+Common.h */,
+				EF4106541F30896900271680 /* UIImage+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -176,7 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF281D1C1F0B3F580086C323 /* Assets.xcassets in Resources */,
+				EF41064B1F3077DF00271680 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -235,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4106411F30745400271680 /* BaseNavigationViewController.swift in Sources */,
+				EF4106551F30896900271680 /* UIImage+Common.m in Sources */,
 				EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */,
 				EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */,
 				EF281D171F0B3F580086C323 /* ViewController.swift in Sources */,
@@ -243,6 +330,11 @@
 				EFE089F51F2AE64C00D81B6E /* Test2ViewController.swift in Sources */,
 				EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */,
 				EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */,
+				EF4106431F30747F00271680 /* HomeTabBarViewController.swift in Sources */,
+				EF4106471F3074AF00271680 /* UserCenterViewController.swift in Sources */,
+				EF41063F1F30743D00271680 /* BaseTableViewCell.swift in Sources */,
+				EF4106451F3074A500271680 /* HomeViewController.swift in Sources */,
+				EF41063D1F30742C00271680 /* BaseTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +439,20 @@
 			baseConfigurationReference = 86051F8981E0D99F391B489B /* Pods-doubo_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = doubo_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/doubo_swift/Extends/UMessage_Sdk_1.5.0a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "doubo_swift/doubo_swift-Bridging-Header.h";
@@ -365,11 +466,20 @@
 			baseConfigurationReference = 821BB4088AF3505504295371 /* Pods-doubo_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4JFR4NTMKQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = doubo_swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/doubo_swift/Extends/UMessage_Sdk_1.5.0a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maweis.doubo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "doubo_swift/doubo_swift-Bridging-Header.h";
