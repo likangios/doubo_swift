@@ -13,11 +13,24 @@ class Test1ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.gray
-
+        view.backgroundColor = UIColor.white
+        creatSubView()
         // Do any additional setup after loading the view.
     }
+    func creatSubView() {
+        let testView = UIView()
+        testView.backgroundColor = UIColor.blue
+        testView.addLineUp(hasUP: true, andDown: true, andColor: UIColor.red)
+        view.addSubview(testView)
+        testView.snp.makeConstraints { (make) in
+            make.edges.equalTo(UIEdgeInsets(top: 100, left: 10, bottom: 300, right: 10))
+        }
+        testView.layoutIfNeeded()
+        let corner:UIRectCorner = [UIRectCorner.topLeft,UIRectCorner.topRight]
+        testView.clipRectCorner(direction: corner, cornerRadius: 5)
 
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

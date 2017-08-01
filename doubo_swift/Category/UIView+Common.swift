@@ -28,7 +28,7 @@ extension UIView {
                make.left.equalTo(leftSpace)
                 make.right.equalTo(-leftSpace)
                 make.top.equalTo(0)
-                make.height.equalTo(0.5)
+                make.height.equalTo(1)
             })
             
         }
@@ -39,7 +39,7 @@ extension UIView {
                 make.left.equalTo(leftSpace)
                 make.right.equalTo(-leftSpace)
                 make.bottom.equalTo(0)
-                make.height.equalTo(0.5)
+                make.height.equalTo(1)
             })
  
         }
