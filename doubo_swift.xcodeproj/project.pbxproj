@@ -27,6 +27,8 @@
 		EFD70BDE1F298D0C00E8F8FA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD70BDD1F298D0C00E8F8FA /* Common.swift */; };
 		EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */; };
 		EFE089F51F2AE64C00D81B6E /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */; };
+		EFE089F71F30976D00D81B6E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F61F30976D00D81B6E /* UIView+Extension.swift */; };
+		EFE089F91F3099B300D81B6E /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE089F81F3099B300D81B6E /* UIView+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		EFD70BDD1F298D0C00E8F8FA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EFE089F21F2AE64500D81B6E /* Test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		EFE089F41F2AE64C00D81B6E /* Test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
+		EFE089F61F30976D00D81B6E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EFE089F81F3099B300D81B6E /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 				EFD70BDB1F2988B500E8F8FA /* UIColor+expanded.m */,
 				EF4106531F30896900271680 /* UIImage+Common.h */,
 				EF4106541F30896900271680 /* UIImage+Common.m */,
+				EFE089F61F30976D00D81B6E /* UIView+Extension.swift */,
+				EFE089F81F3099B300D81B6E /* UIView+Common.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -322,11 +328,13 @@
 			files = (
 				EF4106411F30745400271680 /* BaseNavigationViewController.swift in Sources */,
 				EF4106551F30896900271680 /* UIImage+Common.m in Sources */,
+				EFE089F71F30976D00D81B6E /* UIView+Extension.swift in Sources */,
 				EFD70BD11F29772700E8F8FA /* LoginViewController.swift in Sources */,
 				EFD70BDC1F2988B500E8F8FA /* UIColor+expanded.m in Sources */,
 				EF281D171F0B3F580086C323 /* ViewController.swift in Sources */,
 				EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */,
 				EFD70BDE1F298D0C00E8F8FA /* Common.swift in Sources */,
+				EFE089F91F3099B300D81B6E /* UIView+Common.swift in Sources */,
 				EFE089F51F2AE64C00D81B6E /* Test2ViewController.swift in Sources */,
 				EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */,
 				EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */,
