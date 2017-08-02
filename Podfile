@@ -9,5 +9,5 @@ pod 'SDWebImage', '~> 4.0.0'
 pod 'Moya', '~> 8.0.2'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'BlocksKit', '~> 2.2.5'
-
+pod 'SwiftyJSON', '~> 3.1.4'
 end

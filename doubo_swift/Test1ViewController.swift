@@ -8,6 +8,7 @@
 
 import UIKit
 import StoreKit
+import MBProgressHUD
 
 class Test1ViewController: BaseViewController {
 
@@ -37,15 +38,21 @@ class Test1ViewController: BaseViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        MBProgressHUD.showAdded(to: view, animated: true)
+        let queue = DispatchQueue.main
+        let delayTime:DispatchTimeInterval = .seconds(3)
+        queue.asyncAfter(deadline: .now()+delayTime) {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
 //        let test2 = Test2ViewController()
 //        present(test2, animated: true, completion: {
-//            
 //        })
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        } else {
-            // Fallback on earlier versions
-        }
+//        if #available(iOS 10.3, *) {
+//            SKStoreReviewController.requestReview()
+//        } else {
+//            // Fallback on earlier versions
+//        }
     }
     /*
     // MARK: - Navigation

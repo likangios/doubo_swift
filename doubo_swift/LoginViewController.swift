@@ -8,6 +8,8 @@
 
 import UIKit
 import SDWebImage
+import Alamofire
+import SwiftyJSON
 
 enum LoginType:Int{
     case QQLogin = 1
@@ -92,8 +94,10 @@ extension LoginViewController {
         
         switch button.tag {
         case LoginType.QQLogin.rawValue:
-            let test = Test1ViewController()
-            navigationController?.pushViewController(test, animated: true)
+            
+     
+            
+//            return
 //            let appdelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //            let nav = BaseNavigationViewController.init(rootViewController: HomeTabBarViewController())
 //            nav.setNavigationBarHidden(true, animated: true)
@@ -106,7 +110,8 @@ extension LoginViewController {
             
             break
         case LoginType.MBLogin.rawValue:
-            
+            let mobil = MobilePhoneViewController()
+            navigationController?.pushViewController(mobil, animated: true)
             break
         default:
             break

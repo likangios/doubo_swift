@@ -18,3 +18,8 @@ let kScreenH = UIScreen.main.bounds.height
 // 屏幕高度
 let kScreenW = UIScreen.main.bounds.width
 
+let HostName:String = "http://api.test.doubo.tv"
+let HostPort:String = "80"
+let Access_Key = "doubo_user_key"
+let Access_Secret = "doubo_user_secret"
+let Signature = "signature"
