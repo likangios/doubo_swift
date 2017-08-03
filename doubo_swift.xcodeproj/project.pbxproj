@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31159EBB499A901D22250611 /* Pods_doubo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */; };
+		C8B7C1AC1F337A48004E39A0 /* UIImage+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7C1AB1F337A48004E39A0 /* UIImage+Common.swift */; };
 		EF281D151F0B3F580086C323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D141F0B3F580086C323 /* AppDelegate.swift */; };
 		EF281D171F0B3F580086C323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF281D161F0B3F580086C323 /* ViewController.swift */; };
 		EF41063D1F30742C00271680 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41063C1F30742C00271680 /* BaseTabBarViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		821BB4088AF3505504295371 /* Pods-doubo_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubo_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift.release.xcconfig"; sourceTree = "<group>"; };
 		86051F8981E0D99F391B489B /* Pods-doubo_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubo_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubo_swift/Pods-doubo_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B7C1AB1F337A48004E39A0 /* UIImage+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Common.swift"; sourceTree = "<group>"; };
 		E368DEF33D449CDE67BEF5E9 /* Pods_doubo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doubo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF281D111F0B3F580086C323 /* doubo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF281D141F0B3F580086C323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				EF4106541F30896900271680 /* UIImage+Common.m */,
 				EFE089F61F30976D00D81B6E /* UIView+Extension.swift */,
 				EFE089F81F3099B300D81B6E /* UIView+Common.swift */,
+				C8B7C1AB1F337A48004E39A0 /* UIImage+Common.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				EFD70BCF1F29771500E8F8FA /* BaseViewController.swift in Sources */,
 				EFE089F31F2AE64500D81B6E /* Test1ViewController.swift in Sources */,
 				EF4106431F30747F00271680 /* HomeTabBarViewController.swift in Sources */,
+				C8B7C1AC1F337A48004E39A0 /* UIImage+Common.swift in Sources */,
 				EF4106471F3074AF00271680 /* UserCenterViewController.swift in Sources */,
 				EFD105E61F31AF2000608E73 /* NetworkTools.swift in Sources */,
 				EF41063F1F30743D00271680 /* BaseTableViewCell.swift in Sources */,

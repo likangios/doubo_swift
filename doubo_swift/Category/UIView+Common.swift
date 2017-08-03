@@ -30,7 +30,6 @@ extension UIView {
                 make.top.equalTo(0)
                 make.height.equalTo(1)
             })
-            
         }
         if hasDown {
             let line:UIView = lineView(withColor: color)
