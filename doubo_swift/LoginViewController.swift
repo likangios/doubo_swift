@@ -48,13 +48,6 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         creatSubView()
-        let iv = UIImageView()
-        view.addSubview(iv)
-        iv.snp.makeConstraints { (make) in
-            make.size.equalTo(CGSize(width: 100, height: 100))
-            make.center.equalTo(view)
-        }
-        iv.image = UIImage.imageWithColor(color: UIColor.orange, WithFrame: CGRect(x: 10, y: 10, width: 30, height: 30))
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
