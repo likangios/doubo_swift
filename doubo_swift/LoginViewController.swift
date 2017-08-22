@@ -54,7 +54,10 @@ class LoginViewController: BaseViewController {
             make.size.equalTo(CGSize(width: 100, height: 100))
             make.center.equalTo(view)
         }
-        iv.image = UIImage.imageWithColor(color: UIColor.orange, WithFrame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        iv.backgroundColor = UIColor.green
+        iv.contentMode = .center
+        let scaleImage = UIImage.imageWithColor(color: UIColor.orange, WithFrame: CGRect(x: 0, y: 0, width: 10, height: 10)).scaledToSize(targetSize: CGSize(width: 30, height: 30))
+        iv.image = scaleImage;
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
