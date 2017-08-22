@@ -14,17 +14,6 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
        self.navigationItem.title = "首页"
-        creatSubView()
-    }
-    func creatSubView() {
-        let testView = UIView()
-        testView.backgroundColor = UIColor.blue
-        testView.addLineUp(hasUP: true, andDown: true)
-        view.addSubview(testView)
-        testView.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsets(top: 100, left: 10, bottom: 300, right: 10))
-        }
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

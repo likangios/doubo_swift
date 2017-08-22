@@ -40,7 +40,8 @@ extension NetworkTools {
         headers["versionCode"] = UIDevice.current.localizedModel
         headers["pflag"] = "1"
         headers["sourceType"] = "client"
-        headers["User-Agent"] = "DOUBO/2.9.0(iPhone;iOS 10.1.1;iPhone7,1;Scale/3.00)"
+    
+        headers["User-Agent"] = "DOUBO/2.9.0(iPhone;iOS 10.1.1;iPhone7,1;Scale/\(UIScreen.main.scale)"
         headers["idfa"] = "none"
     
         Alamofire.request(url, method: httpMethod, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON() { (response) in

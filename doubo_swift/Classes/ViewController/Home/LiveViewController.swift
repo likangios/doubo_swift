@@ -1,20 +1,19 @@
 //
-//  BaseNavigationViewController.swift
+//  LiveViewController.swift
 //  doubo_swift
 //
-//  Created by macdev on 2017/8/1.
+//  Created by macdev on 2017/8/21.
 //  Copyright © 2017年 jimo. All rights reserved.
 //
 
 import UIKit
 
-class BaseNavigationViewController: UINavigationController {
+class LiveViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.isTranslucent = false
-        self.navigationBar.barTintColor = UIColor.red
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 15)]
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
