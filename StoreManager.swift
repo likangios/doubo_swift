@@ -24,6 +24,7 @@ class StoreManager: NSObject {
         SecItemDelete(query as CFDictionary)
         SecItemAdd(query as CFDictionary, nil)
     }
+    /*
     func loadKeychainItem(attribute:String = "password",service:String = "com.alix.keychain") -> String? {
         var query = Dictionary<String,AnyObject>()
         query[NSString.init(format: kSecClass) as String] = NSString(format: kSecClassGenericPassword) as AnyObject
@@ -40,7 +41,7 @@ class StoreManager: NSObject {
             contentsOfKeychain = NSString.init(data: retrieveData as Data, encoding: .utf8)
         }
         
-    }
+    }*/
     
     
 }

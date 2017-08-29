@@ -107,6 +107,36 @@ class HomeTabBarView: UIView {
         
         
     }
+    /*
+     
+     if (self.userInteractionEnabled == NO && self.alpha <= 0.01 && self.hidden == YES) {
+     return nil;
+     }
+     for (UIView * subview in self.subviews) {
+     
+     CGPoint converP = [subview convertPoint:point fromView:self];
+     if (CGRectContainsPoint(subview.bounds, converP)) {
+     CGRect newRect = CGRectMake(17.5,0, subview.width-35, subview.height);
+     if (CGRectContainsPoint(newRect, converP)) {
+     return  view = subview;
+     }
+     }
+     }
+     */
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        var view = super.hitTest(point, with: event)
+        if self.isUserInteractionEnabled == true && self.alpha <= 0.01 && self.isHidden == true {
+            return nil
+        }
+        for  subView in self.subviews {
+            let converP:CGPoint = subView.convert(point, from: self)
+            let newRect = CGRect(x: 17.5, y: 0, width: subView.width - 35, height: subView.height)
+            if (newRect.contains(converP)){
+                view = subView
+            }
+        }
+        return view
+    }
     
     /*
     // Only override draw() if you perform custom drawing.
